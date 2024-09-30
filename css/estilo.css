@@ -10,3 +10,17 @@ h1{
     text-align: center;
     margin-top: 10%;
 }
+
+.accordion-body.d-flex {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+  
+  .progress-text {
+    font-weight: bold;
+}
+  
+  .progress-text-end {
+    font-weight: bold;
+}
