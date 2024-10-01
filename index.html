@@ -10,26 +10,26 @@
 <body>
     <header>
         <!-- Menu -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Home</a>
+            <a class="navbar-brand" href="#home" onclick="document.getElementById('menu-toggle').click()">Home</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"><img src="img/dev-icon-168.svg"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-link active" aria-current="page" href="#">Sobre</a>
-                    <a class="nav-link" href="#">competências</a>
-                    <a class="nav-link" href="#">Portfólio</a>
-                    <a class="nav-link" href="#">Skills</a>
-                    <a class="nav-link" href="#">Qualificações</a>
+                    <a class="nav-link active" aria-current="page" href="#sobre" onclick="document.getElementById('menu-toggle').click()">Sobre</a>
+                    <a class="nav-link" href="#competência" onclick="document.getElementById('menu-toggle').click()">competências</a>
+                    <a class="nav-link" href="#portfólio" onclick="document.getElementById('menu-toggle').click()">Portfólio</a>
+                    <a class="nav-link" href="#skill" onclick="document.getElementById('menu-toggle').click()">Skills</a>
+                    <a class="nav-link" href="#qualificação" onclick="document.getElementById('menu-toggle').click()">Qualificações</a>
                 </div>
             </div>
         </div>
-    </nav>
+      </nav>
     </header>
     <main>
-        <section class="home">
+        <section class="home" id="home">
             <!-- Colocar uma introdução com uma interação e uma foto -->
             <div class="container text-center">
                 <div class="row">
@@ -42,7 +42,7 @@
                   </div>
                 </div>
             </div>
-        <section class="sobre">
+        <section class="sobre" id="sobre">
             <!-- Colocar um breve resumo sobre quem sou e o que faço -->
             <h1>Sobre mim</h1>
             <div class="container text-center">
@@ -56,7 +56,7 @@
                 </div>
             </div>
         </section>
-        <section class="competências">
+        <section class="competências" id="competência">
             <!-- Colocar as competências na qual me identifico junto a uma imagem para representar-lá -->
             <h1>Competências</h1>
             <div class="container text-center">
@@ -65,7 +65,8 @@
                     <div class="card" style="width: 18rem;">
                         <img src="img/Somblas.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <h4>Colaboração</h4>
+                          <p class="card-text">Trabalho bem em equipe, buscando sempre colaborar para o sucesso de todos e ajudar a manter uma boa comunicação e harmonia no grupo.</p>
                         </div>
                       </div>
                   </div>
@@ -73,7 +74,8 @@
                     <div class="card" style="width: 18rem;">
                         <img src="img/Somblas.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <h4>Resiliência</h4>
+                          <p class="card-text">Tenho a capacidade de lidar com desafios de forma positiva, me adaptando a situações difíceis e encontrando maneiras de seguir em frente.</p>
                         </div>
                       </div>
                   </div>
@@ -81,7 +83,8 @@
                     <div class="card" style="width: 18rem;">
                         <img src="img/Somblas.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <h4>Empatia</h4>
+                          <p class="card-text">Consigo me colocar no lugar dos outros, compreendendo diferentes perspectivas e respeitando as emoções alheias, o que melhora minhas relações interpessoais.</p>
                         </div>
                       </div>
                   </div>
@@ -89,17 +92,18 @@
                     <div class="card" style="width: 18rem;">
                         <img src="img/Somblas.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <h4>Autogestão</h4>
+                          <p class="card-text">Sou capaz de gerenciar minhas emoções e manter o foco em minhas metas, mesmo quando encontro obstáculos ou situações estressantes.</p>
                         </div>
                       </div>
                   </div>
                 </div>
         </section>
-        <section class="portfolio">
+        <section class="portfolio" id="portfólio">
             <!-- Colocar os projetos nos quais eu fiz parte ou desenvolvi -->
             <h1>Portfólio</h1>
         </section>
-        <section class="habilidades">
+        <section class="habilidades" id="skill">
             <!-- Quais áreas eu possuo mais conhecimento -->
             <!-- Usar Accordion com Progress -->
             <h1>Skills</h1>
@@ -156,9 +160,43 @@
               </div>
             </div>
         </section>
-        <section class="qualificações">
+        <section class="qualificações" id="qualificação">
             <!-- Cursos, escola, trabalhos e coisas do tipo -->
             <h1>Qualificações</h1>
+
+            <!-- Linha do Tempo -->
+             <div class="timeline">
+              <ul>
+                <li>
+                  <div class="content">
+                    <h3>Lorem</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut, odit molestiae dolor voluptatum omnis nam nesciunt porro quia magnam libero, nemo soluta veritatis facere quo provident, temporibus dolorem eius quos.</p>
+                  </div>
+                  <div class="time">
+                    <h4>2023</h4>
+                  </div>
+                </li>
+                <li>
+                  <div class="content">
+                    <h3>Lorem</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut, odit molestiae dolor voluptatum omnis nam nesciunt porro quia magnam libero, nemo soluta veritatis facere quo provident, temporibus dolorem eius quos.</p>
+                  </div>
+                  <div class="time">
+                    <h4>2023</h4>
+                  </div>
+                </li>
+                <li>
+                  <div class="content">
+                    <h3>Lorem</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut, odit molestiae dolor voluptatum omnis nam nesciunt porro quia magnam libero, nemo soluta veritatis facere quo provident, temporibus dolorem eius quos.</p>
+                  </div>
+                  <div class="time">
+                    <h4>2023</h4>
+                  </div>
+                </li>
+                <div style="clear: both;"></div>
+              </ul>
+             </div>
         </section>
     </main>
     <footer>
