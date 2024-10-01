@@ -11,6 +11,9 @@ h3{
     padding-top: 15%;
 }
 
+footer{
+    background-color: cornflowerblue;
+}
 h1{
     text-align: center;
     margin-top: 10%;
@@ -31,6 +34,9 @@ h1{
     font-weight: bold;
 }
 
+.contatos{
+    padding: 50px;
+}
 
 .timeline{
     position: relative;
